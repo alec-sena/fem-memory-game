@@ -1,8 +1,6 @@
 import PlayerPanel from "./PlayerPanel";
 
 function Dashboard(props) {
-    const numPlayers = props.numPlayers;
-    const players = props.players;
 
     if(numPlayers === 1){
         return(
@@ -14,9 +12,6 @@ function Dashboard(props) {
     } else {
         return(
             <div className="Dashboard">
-                {players.map(player => 
-                    <PlayerPanel player={player} />
-                )}
             </div>
         )
     }

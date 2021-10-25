@@ -1,6 +1,9 @@
 function PlayerPanel(props){
     return (
-        <div className="PlayerPanel">{props.player}</div>
+        <div className="PlayerPanel">
+            <p>{props.player}</p>
+            <p>{props.score}</p>
+        </div>
     )
 }
 
